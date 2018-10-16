@@ -1,3 +1,6 @@
+# testing how to use a datagroup to schedule a dashboard
+# conclusion: datagroup needs to be defined inside the model or defined in a .lkml file and included in the model file
+
 connection: "thelook"
 
 
