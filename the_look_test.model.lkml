@@ -17,6 +17,7 @@ explore: events {
     sql_on: ${events.user_id} = ${users.id} ;;
     relationship: many_to_one
   }
+  ## comment 1
 }
 
 explore: inventory_items {
