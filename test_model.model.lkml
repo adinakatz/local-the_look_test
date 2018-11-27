@@ -46,6 +46,7 @@ view: orders {
 #       label: "link test"
 #       }
     sql: ${TABLE}.status ;;
+
 #     link: {
 #       url: "/explore/test_model/orders_filter_test?fields=orders_filter_test.id&f[orders_filter_test.status_test]={{ value }}&f[orders_filter_test.id]={{ _filters['orders_filter_test.id'] }}"
 #       label: "Test"
@@ -79,6 +80,7 @@ view: orders {
     {% endif %}
     {% endfor %} ;;
     sql: "Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello";;
+
   }
 
   dimension: user_id {
@@ -134,7 +136,4 @@ view: orders {
 #   }
 # }
 
-explore: orders_filter_test {
-  from: orders
-  label: "Test"
-}
+explore: orders {}
