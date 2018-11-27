@@ -37,6 +37,11 @@ view: orders {
   dimension: status {
     type: string
     sql: ${TABLE}.status ;;
+    drill_fields: [created_date,id]
+    link: {
+      url: "{{link}}"
+      label: "Test Link"
+      }
   }
 
   dimension: user_id {
@@ -85,7 +90,4 @@ view: orders {
 #   }
 # }
 
-explore: orders_filter_test {
-  from: orders
-  label: "Test"
-}
+explore: orders {}
